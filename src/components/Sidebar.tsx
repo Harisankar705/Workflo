@@ -29,7 +29,6 @@ const Sidebar: React.FC = () => {
 
   return (
     <div className="w-64 bg-white h-full border-r border-gray-200 flex flex-col">
-      {/* Header */}
       <div className="p-6 flex items-center space-x-3">
         <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
           <span className="text-white font-bold text-sm">PM</span>
@@ -37,7 +36,6 @@ const Sidebar: React.FC = () => {
         <span className="font-semibold text-gray-900">Project M.</span>
       </div>
 
-      {/* Navigation */}
       <nav className="px-4 space-y-1">
         {menuItems.map((item, index) => (
           <button
@@ -54,7 +52,6 @@ const Sidebar: React.FC = () => {
         ))}
       </nav>
 
-      {/* Projects Section */}
       <div className="mt-8 px-4">
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wide">
@@ -82,7 +79,6 @@ const Sidebar: React.FC = () => {
         </div>
       </div>
 
-      {/* Thoughts Time Card */}
       <div className="mx-4 mt-8 p-4 bg-yellow-50 rounded-xl">
         <div className="flex items-center space-x-2 mb-2">
           <Lightbulb className="text-yellow-600" size={20} />

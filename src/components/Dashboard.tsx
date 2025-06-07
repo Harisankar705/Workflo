@@ -155,7 +155,6 @@ const Dashboard: React.FC = () => {
 
   return (
     <div className="flex-1 bg-gray-50">
-      {/* Header */}
       <div className="bg-white border-b border-gray-200 px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
@@ -219,7 +218,6 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
 
-        {/* Search and Filter Bar */}
         <div className="mt-4 flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <div className="relative">
@@ -247,7 +245,6 @@ const Dashboard: React.FC = () => {
               </button>
             </div>
 
-            {/* Priority Filter Buttons */}
             <div className="flex items-center space-x-2">
               {['All', 'High', 'Medium', 'Low'].map((priority) => (
                 <button
@@ -264,7 +261,6 @@ const Dashboard: React.FC = () => {
               ))}
             </div>
 
-            {/* Assignee Filter */}
             <div className="flex items-center space-x-2">
               <select
                 value={filter.assignee}
@@ -278,7 +274,6 @@ const Dashboard: React.FC = () => {
               </select>
             </div>
 
-            {/* Due Date Filter */}
             <div className="flex items-center space-x-2">
               {['Overdue', 'Today', 'This Week'].map((period) => {
                 const value = period.toLowerCase().replace(' ', '');
@@ -315,12 +310,10 @@ const Dashboard: React.FC = () => {
         </div>
       </div>
 
-      {/* Notification Banner */}
       <div className="px-6 pt-4">
         <NotificationBanner />
       </div>
 
-      {/* Kanban Board */}
       <div className="p-6">
         <DragDropContext onDragEnd={handleDragEnd}>
           <div className="flex space-x-6 overflow-x-auto pb-4">

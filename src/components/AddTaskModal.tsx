@@ -31,7 +31,7 @@ const AddTaskModal: React.FC<AddTaskModalProps> = ({ isOpen, onClose, onAdd, ini
       description: description.trim(),
       priority,
       status: initialStatus as 'todo' | 'inprogress' | 'done',
-      assignees: ['user1', 'user2'], // Default assignees
+      assignees: ['user1', 'user2'], 
       comments: 0,
       files: 0,
       dueDate: dueDate?.toISOString(),
@@ -41,7 +41,6 @@ const AddTaskModal: React.FC<AddTaskModalProps> = ({ isOpen, onClose, onAdd, ini
       createdBy: user?.uid || 'anonymous',
     });
 
-    // Reset form
     setTitle('');
     setDescription('');
     setPriority('Medium');
@@ -162,7 +161,6 @@ const AddTaskModal: React.FC<AddTaskModalProps> = ({ isOpen, onClose, onAdd, ini
             </div>
           )}
 
-          {/* Custom Fields */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Custom Fields

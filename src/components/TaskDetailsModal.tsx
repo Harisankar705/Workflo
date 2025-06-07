@@ -92,15 +92,12 @@ const TaskDetailsModal: React.FC<TaskDetailsModalProps> = ({ task, isOpen, onClo
         </div>
 
         <div className="p-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* Main Content */}
           <div className="lg:col-span-2 space-y-6">
-            {/* Description */}
             <div>
               <h3 className="text-lg font-semibold mb-2">Description</h3>
               <p className="text-gray-600">{task.description}</p>
             </div>
 
-            {/* Subtasks */}
             <div>
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-lg font-semibold">
@@ -157,7 +154,6 @@ const TaskDetailsModal: React.FC<TaskDetailsModalProps> = ({ task, isOpen, onClo
               </div>
             </div>
 
-            {/* Custom Fields */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Custom Fields</h3>
               
@@ -200,7 +196,6 @@ const TaskDetailsModal: React.FC<TaskDetailsModalProps> = ({ task, isOpen, onClo
                 </div>
               ))}
 
-              {/* Add Custom Field */}
               <div className="mt-4">
                 <h4 className="text-sm font-medium text-gray-700 mb-2">Add Custom Field</h4>
                 <div className="flex flex-wrap gap-2">
@@ -220,7 +215,6 @@ const TaskDetailsModal: React.FC<TaskDetailsModalProps> = ({ task, isOpen, onClo
               </div>
             </div>
 
-            {/* Activity Log */}
             <div>
               <button
                 onClick={() => setShowActivityLog(!showActivityLog)}
@@ -252,9 +246,7 @@ const TaskDetailsModal: React.FC<TaskDetailsModalProps> = ({ task, isOpen, onClo
             </div>
           </div>
 
-          {/* Sidebar */}
           <div className="space-y-6">
-            {/* Due Date */}
             <div>
               <h3 className="text-lg font-semibold mb-3 flex items-center">
                 <Calendar size={20} className="mr-2" />
@@ -282,7 +274,6 @@ const TaskDetailsModal: React.FC<TaskDetailsModalProps> = ({ task, isOpen, onClo
               )}
             </div>
 
-            {/* Priority */}
             <div>
               <h3 className="text-lg font-semibold mb-3 flex items-center">
                 <Tag size={20} className="mr-2" />
@@ -302,7 +293,6 @@ const TaskDetailsModal: React.FC<TaskDetailsModalProps> = ({ task, isOpen, onClo
               </select>
             </div>
 
-            {/* Assignees */}
             <div>
               <h3 className="text-lg font-semibold mb-3 flex items-center">
                 <User size={20} className="mr-2" />
@@ -323,7 +313,6 @@ const TaskDetailsModal: React.FC<TaskDetailsModalProps> = ({ task, isOpen, onClo
               </div>
             </div>
 
-            {/* Stats */}
             <div>
               <h3 className="text-lg font-semibold mb-3">Stats</h3>
               <div className="space-y-2 text-sm">

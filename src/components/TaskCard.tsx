@@ -80,7 +80,6 @@ const TaskCard: React.FC<TaskCardProps> = ({ task, onDelete }) => {
         <h3 className="font-semibold text-gray-900 mb-2">{task.title}</h3>
         <p className="text-sm text-gray-600 mb-4 line-clamp-2">{task.description}</p>
         
-        {/* Due Date */}
         {task.dueDate && (
           <div className={`inline-flex items-center space-x-1 px-2 py-1 rounded text-xs font-medium mb-3 ${getDueDateColor(task.dueDate)}`}>
             <Calendar size={12} />
@@ -88,7 +87,6 @@ const TaskCard: React.FC<TaskCardProps> = ({ task, onDelete }) => {
           </div>
         )}
 
-        {/* Subtasks Progress */}
         {totalSubtasks > 0 && (
           <div className="mb-3">
             <div className="flex items-center justify-between text-xs text-gray-600 mb-1">
@@ -107,7 +105,6 @@ const TaskCard: React.FC<TaskCardProps> = ({ task, onDelete }) => {
           </div>
         )}
 
-        {/* Custom Fields Preview */}
         {task.customFields.length > 0 && (
           <div className="mb-3">
             <div className="flex flex-wrap gap-1">
